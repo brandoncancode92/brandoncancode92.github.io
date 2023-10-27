@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Favicon link -->
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <!-- Font links -->
+    <!-- Pixel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Gochi+Hand&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,400&family=Tektur&display=swap" rel="stylesheet">
+    <!-- Caveat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Gochi+Hand&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,400&family=Tektur&display=swap" rel="stylesheet">
+    <!-- Bebas Neue Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Dancing+Script&family=Gochi+Hand&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;1,400&family=Tektur&display=swap" rel="stylesheet">
+    <title>Brandon Colangelo's Portfolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top card-bg border-bottom-b">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <img class="home-icon" src="/static/img/home.png" alt="Home icon">
+                <h3 style="margin-top: 10px;" class="pixel text-black">Brandon Colangelo</h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="showLinks()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/plant.png" alt="Plant">
+                        <a class="nav-link pixel" href="#about">About</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/trophy.png" alt="Trophy">
+                        <a class="nav-link pixel" href="#projects">Projects</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/star.png" alt="Star">
+                        <a class="nav-link pixel" href="#skills">Skills</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/grad-cap.png" alt="Graduation cap">
+                        <a class="nav-link pixel" href="#education">Education</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/check.png" alt="Check">
+                        <a class="nav-link pixel" href="#certifications">Certifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/flame.png" alt="Flame">
+                        <a class="nav-link pixel" href="#experience">Experience</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="d-flex align-items-center mx-2">
+                        <img class="nav-icon" src="/static/img/plane.png" alt="Plane">
+                        <a class="nav-link pixel" href="#contact">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- Main banner -->
+    <div style="margin-top: 50px;" class="d-flex aign-items-center justify-content-around fixed-bg b-bottom">
+        <div class="row p-5">
+            <div class="text-center slide col-md-6">
+                <img class="profile_image rounded-circle" src="/static/img/noir_profile_pic.png" alt="Profile picture">
+            </div>
+            <div class="text-center my-auto col-md-6">
+                <h2 class="pixel mb-3 text-white">"I want to be able to build anything that I can imagine."</h2>
+                <p class="career-text mb-3"><span class="auto-type"></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- End of main banner -->
+    <!-- About me -->
+    <div id="about" class="frame about2-bg p-3">
+        <div class="row justify-content-around">
+            <div class="col-md-5 text-center my-auto pixel">
+                <h2 class="pixel about-sub-header">About me</h2>
+                <h4>
+                    Software Engineer focused on developing full-stack applications with <span id="python">Python</span>. Skilled in communicating effectively,
+                    identifying and solving problems, conducting research, and designing solutions. Eager to <span id="learn">learn new technologies</span> and
+                    apply them to solve real-world problems. Demonstrated ability to design, develop, and maintain <span id="secure">secure and scalable applications</span>.
+                    In my spare time I enjoy sports, the outdoors, and collecting nostalgia.
+                </h4>
+            </div>
+            <!-- About me pictures -->
+            <div class="my-auto col-md-3">
+                <img class="my_slides about-pics" src="/static/img/kayaking.png" alt="Kayaking">
+                <img class="my_slides about-pics" src="/static/img/collecting.png" alt="Collecting nostalgia">
+            </div>
+        </div>
+    </div>
+    <!-- About me second row -->
+    <div class="nav p-3 b-bottom frame">
+        <div class="row justify-content-around">
+            <!-- Loading animation -->
+            <div class="my-auto col-md-3">
+                <section>
+                    <div class="loader" style="--r:1;">
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:4;"></span>
+                        <span style="--i:5;"></span>
+                        <span style="--i:6;"></span>
+                        <span style="--i:7;"></span>
+                        <span style="--i:8;"></span>
+                        <span style="--i:9;"></span>
+                        <span style="--i:10;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:13;"></span>
+                        <span style="--i:14;"></span>
+                        <span style="--i:15;"></span>
+                        <span style="--i:16;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:18;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:20;"></span>
+                    </div>
+                    <div class="loader" style="--r:2;">
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:4;"></span>
+                        <span style="--i:5;"></span>
+                        <span style="--i:6;"></span>
+                        <span style="--i:7;"></span>
+                        <span style="--i:8;"></span>
+                        <span style="--i:9;"></span>
+                        <span style="--i:10;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:13;"></span>
+                        <span style="--i:14;"></span>
+                        <span style="--i:15;"></span>
+                        <span style="--i:16;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:18;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:20;"></span>
+                    </div>
+                    <div class="loader" style="--r:3;">
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:4;"></span>
+                        <span style="--i:5;"></span>
+                        <span style="--i:6;"></span>
+                        <span style="--i:7;"></span>
+                        <span style="--i:8;"></span>
+                        <span style="--i:9;"></span>
+                        <span style="--i:10;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:13;"></span>
+                        <span style="--i:14;"></span>
+                        <span style="--i:15;"></span>
+                        <span style="--i:16;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:18;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:20;"></span>
+                    </div>
+                    <div class="loader" style="--r:4;">
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                        <span style="--i:4;"></span>
+                        <span style="--i:5;"></span>
+                        <span style="--i:6;"></span>
+                        <span style="--i:7;"></span>
+                        <span style="--i:8;"></span>
+                        <span style="--i:9;"></span>
+                        <span style="--i:10;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:13;"></span>
+                        <span style="--i:14;"></span>
+                        <span style="--i:15;"></span>
+                        <span style="--i:16;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:18;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:20;"></span>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-5 text-center text-white my-auto pixel">
+                <h2 class="pixel text-black">My career as a Software Engineer</h2>
+                <h4>
+                    As far as I can remember, I have always admired the potential for technology and have been interested in learning more about it.
+                    In <span class="black-highlight">December of 2021</span> I decided to read a book teaching the basics of Python. I was fascinated
+                    at what could be done with just a few lines of code. I wanted to understand more, so I decided to take a
+                    <span class="black-highlight">private 12 week course</span> from a Software Engineer.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- End of about me second row -->
+    <!-- About me third row -->
+    <div class="frame about2-bg p-3">
+        <div class="row justify-content-around">
+            <div class="col-md-5 text-center my-auto pixel">
+                <h2 class="pixel about-sub-header">My first project</h2>
+                <h4>
+                    Following several weeks of intensive study it was time to build my <span class="text-white">first project</span> using Python! I created a NBA
+                    prediction app that would tell a user which of two teams was likely to win by pulling data from a <span class="text-light">API</span>. It was a life changing
+                    experience, and with that experience, I decided to become a Software Engineer.
+                </h4>
+            </div>
+            <!-- My first project picture/link -->
+            <div class="my-auto col-md-3 card-bg rounded timeline-border p-3">
+                <a target="_blank" href="https://github.com/Brando129/NBA_Prediction_-App.git" class="text-decoration-none text-black">
+                    <h3 class="pixel text-center">NBA Prediction</h3>
+                    <div class="text-center">
+                        <img src="/static/img/basketball.gif" alt="Basketball gif">
+                        <h5 class="pixel">
+                            Used Python to construct a back-end program that would take two teams given by a user, and select the most likely winner by comparing each of those teams
+                            statistics from a API.
+                        </h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End of about me third row -->
+    <!-- About me fourth row -->
+    <div class="nav p-3 b-bottom frame">
+        <div class="row justify-content-around">
+            <!-- Bootcamp timeline chart -->
+            <div class="my-auto col-md-3 fade-in animate">
+                <!-- <ul class="border border-black no-dots bootcamp-timeline-spine rounded mt-3 timeline-border" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)"> -->
+                <ul class="border border-black no-dots bootcamp-timeline-spine rounded mt-3 timeline-border">
+                    <li class="card-bg p-2 border border-black">
+                        <h5>Months 1-3</h5>
+                        <div class="wrapper">
+                            <img class="time-line-imgs" src="/static/img/html-css-js.png" alt="HTML | CSS | Javascript">
+                        </div>
+                    </li>
+                    <li class="card-bg p-2 border border-black">
+                        <h5>Months 4-6</h5>
+                        <div class="wrapper">
+                            <img style="margin-right: 5px;" class="time-line-imgs" src="/static/img/python-logo.png" alt="Python">
+                            <img style="margin-right: 5px;" class="time-line-imgs" src="/static/img/mysql.png" alt="MySQL">
+                            <img style="margin-right: 5px;" class="time-line-imgs" src="/static/img/flask.png" alt="Flask">
+                            <img class="time-line-imgs" src="/static/img/jinja2.png" alt="Jinja2">
+                            <img style="margin-top: 5px;" class="time-line-imgs" src="/static/img/aws.png" alt="AWS">
+                        </div>
+                    </li>
+                    <li class="card-bg p-2 border border-black">
+                        <h5>Month 7</h5>
+                        <div class="wrapper">
+                            <div class="d-flex">
+                                <img class="time-line-imgs" src="/static/img/trophy.png" alt="Trophy">
+                                <h6 style="margin-top: 10px;">Projects and Algorithms</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-bg p-2 border border-black">
+                        <h5>Month 8</h5>
+                        <div class="wrapper">
+                            <div class="d-flex">
+                                <img class="time-line-imgs" src="/static/img/grad-cap.png" alt="Graduation cap">
+                                <h6 style="margin-top: 10px; margin-left: 5px;">Graduated!</h6>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 text-center text-white my-auto pixel">
+                <h2 class="pixel text-black">My coding bootcamp training</h2>
+                <h4>
+                    After thorough reflections, I made a decision to join an immersive coding bootcamp at <span class="teal-highlight">Coding Dojo</span>.
+                    During my <span class="black-highlight">28 week program</span>, I intensively coded, searched, read, and coded more. It was such an
+                    incredible learning experience and opened my mind to even more possibilities. This is what my bootcamp experience looks like:
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- End of about me fourth row -->
+    <!-- About me row five -->
+    <div class="frame about2-bg p-3">
+        <div class="row justify-content-around">
+            <div class="col-md-5 text-center my-auto pixel">
+                <h2 class="pixel about-sub-header">My life these days</h2>
+                <h4>
+                    I've been continuously coding and learning. I would like to learn more and more!
+                </h4>
+            </div>
+            <!-- Github link -->
+            <div class="my-auto col-md-3">
+                <a href="https://github.com/Brando129" target="_blank">
+                    <img class="github-logo" src="/static/img/github.png" alt="Github cat" onmouseover="scale(this, 1.2)" onmouseleave="scale(this, 1)">
+                </a>
+                <p class="text-center pixel text-white">Check out what I've been working on!</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of about me row five -->
+    <!-- End of about me -->
+    <!-- Projects -->
+    <!-- Web projects banner -->
+    <div id="projects" class="fixed-projects-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-black text-center">Web Projects</h1>
+                <!-- <h1 class="skills-txt text-black text-center">Here are some of the web projects that I've built.</h1> -->
+            </div>
+        </div>
+    </div>
+    <!-- End of web projects banner -->
+    <!-- Portfolio -->
+    <div class="text-center rounded-3 h-100">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100 p-5 nav frame">
+                <div class="text-light ">
+                    <div class="row">
+                        <!-- Game Vault -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/standby.gif" alt="Game Vault">
+                                    <!-- <a href="/game_vault" target="_blank"><img class="project_image" src="/static/img/standby.gif" alt="Game Vault"></a> -->
+                                    <p class="career_text my-2">Game Vault</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Javascript | Python | Flask | Jinja2 | MySQL | API
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none mx-2" href="https://github.com/Brando129/game_vault.git" target="_blank">Code</a> |
+                                            <a class="code_link text-decoration-none mx-2" href="https://www.linkedin.com/posts/brandoncancode_project-game-vault-this-application-allows-activity-7104492529756094464-estl?utm_source=share&utm_medium=member_desktop" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Game Vault -->
+                        <!-- Recipes -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/recipes.png" alt="Recipes">
+                                    <!-- <a href="#" target="_blank"><img class="project_image" src="/static/img/recipes.png" alt="Recipes"></a> -->
+                                    <p class="career_text my-2">Recipe Share</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Python | Flask | Jinja2 | MySQL
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none mx-2" href="https://github.com/Brando129/recipes.git" target="_blank">Code</a> |
+                                            <!-- <a class="code_link text-decoration-none mx-2" href="http://18.219.235.38" target="_blank">Try me</a> | -->
+                                            <a class="code_link text-decoration-none mx-2" href="https://www.linkedin.com/posts/brandoncancode_softwareengineer-pythondeveloper-webdeveloper-activity-7103720655228960768-t085?utm_source=share&utm_medium=member_desktop" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Recipes -->
+                        <!-- Ohana Rideshares -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/ohana.png" alt="Ohana Rideshares">
+                                    <!-- <a href="#" target="_blank"><img class="project_image" src="/static/img/ohana.png" alt="Ohana Rideshares"></a> -->
+                                    <p class="career_text my-2">Ohana Rideshares</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Python | Flask | Jinja2 | MySQL
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none mx-2" href="https://github.com/Brando129/ohana_rideshares.git" target="_blank">Code</a> |
+                                            <!-- <a class="code_link text-decoration-none mx-2" href="http://3.145.117.166" target="_blank">Try me</a> | -->
+                                            <!-- <a class="code_link text-decoration-none" href="/ohana" target="_blank">Video</a> -->
+                                            <a class="code_link text-decoration-none mx-2" href="https://www.linkedin.com/posts/brandoncancode_softwareengineer-softwaredeveloper-pythondeveloper-activity-7104142917631442944-ldYF?utm_source=share&utm_medium=member_desktop" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Ohana Rideshares -->
+                        <!-- Heroes and Villains -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/superhero.png" alt="Heroes and Villains">
+                                    <!-- <a href="/heroes_and_villains" target="_blank"><img class="project_image" src="/static/img/superhero.png" alt="Heroes and Villains"></a> -->
+                                    <p class="career_text my-2">Heroes and Villains</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Python | Flask | Jinja2 | API
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none mx-2" href="https://github.com/Brando129/Superheroes_and_Villains.git" target="_blank">Code</a> |
+                                            <a class="code_link text-decoration-none mx-2" href="https://www.linkedin.com/posts/brandoncancode_html-css3-bootstrap5-activity-7097220435473272832-N0dc?utm_source=share&utm_medium=member_desktop" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Heroes and Villains -->
+                        <!-- Personal Website -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/banner-pw.png" alt="Personal Website">
+                                    <p class="career_text my-2">Personal Website</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Python | Flask | Javascript
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none" href="https://github.com/Brando129/Personal_Website.git" target="_blank">Code</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Personal Website -->
+                        <!-- The Wall -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="card card_height project_card" style="background-color: rgba(102, 96, 96, 0.7);">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image" src="/static/img/wall.png" alt="The Wall">
+                                    <!-- <a href="/wall" target="_blank"><img class="project_image" src="/static/img/wall.png" alt="The Wall"></a> -->
+                                    <p class="career_text my-2">The Wall</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        HTML | CSS | Bootstrap | Python | Flask | Jinja2 | MySQL
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link text-decoration-none mx-2" href="https://github.com/Brando129/coding_dojo_wall.git" target="_blank">Code</a> |
+                                            <a class="code_link text-decoration-none mx-2" href="https://www.linkedin.com/posts/brandoncancode_softwareengineer-softwaredevelopment-pythonengineer-activity-7104145536412225537-E9G0?utm_source=share&utm_medium=member_desktop" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of The Wall -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Web portfolio -->
+    <!-- Game projects banner -->
+    <div class="fixed-game-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-white text-center">Game Projects</h1>
+                <!-- <h1 class="skills-txt text-white text-center">Here are some of the game projects that I've built.</h1> -->
+            </div>
+        </div>
+    </div>
+    <!-- End of game projects banner -->
+    <!-- Game portfolio -->
+    <div class="text-center rounded-3 h-100">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100 p-5 about2-bg frame">
+                <div class="text-light ">
+                    <div class="row">
+                        <!-- A.I. Checkers -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/checkerboard.png" alt="Checkers">
+                                    <p class="career_text2 my-2">A.I. Checkers</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/checkers.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://www.linkedin.com/feed/update/urn:li:activity:7120503082425204737/" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of A.I. Checkers -->
+                        <!-- Planet Defense -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/planet-defense.png" alt="Planet Defense">
+                                    <p class="career_text2 my-2">Planet Defense</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/planet_defense.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://www.linkedin.com/feed/update/urn:li:activity:7117549592711229440/" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of planet defense -->
+                        <!-- Platformer -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/platformer.png" alt="Platformer">
+                                    <p class="career_text2 my-2">Platformer</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/platformer.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="#projects" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of platformer -->
+                        <!-- Aim trainer -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/bullseye.png" alt="Aim Trainer">
+                                    <p class="career_text2 my-2">Aim Trainer</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/aim_trainer.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://www.linkedin.com/feed/update/urn:li:activity:7117168703921606656/" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of aim trainer -->
+                        <!-- Tetris -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/tetris.png" alt="Tetris">
+                                    <p class="career_text2 my-2">Tetris</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/tetris.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://www.linkedin.com/feed/update/urn:li:activity:7116107706897203200/" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of tetris -->
+                        <!-- Pong -->
+                        <div class="col-md-6 col-lg-4" onmouseover="scale(this, 1.1)" onmouseleave="scale(this, 1)">
+                            <div class="game-card-bg card card_height2 project_card mb-4">
+                                <div class="card-body text-center text-light">
+                                    <img class="project_image2" src="/static/img/pong.png" alt="Pong">
+                                    <p class="career_text2 my-2">Pong</p>
+                                    <p>
+                                        Technologies Used:
+                                        <br>
+                                        Python | Pygame
+                                        <br>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://github.com/Brando129/pong.git" target="_blank">Code</a> |
+                                            <a class="code_link2 text-decoration-none mx-2" href="https://www.linkedin.com/feed/update/urn:li:activity:7115703523501121536/" target="_blank">Video</a>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Pong -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of game portfolio -->
+    <!-- End of projects -->
+    <!-- Skills banner -->
+    <div id="skills" class="fixed-skills-bg border-bottom-b border-top-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-center">Skills</h1>
+                <!-- <h1 class="skills-txt text-center">Major skills that I've aquired so far.</h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="frame nav p-3">
+        <div class="mx-auto col-md-6 card-bg p-1 skills2-txt">
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Languages</h2>
+                <h5>Python | Javascript | HTML | CSS</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Front End</h2>
+                <h5>Bootstrap</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Web Servers and Frameworks</h2>
+                <h5>Flask | Gunicorn | Nginx </h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Cloud Services</h2>
+                <h5>AWS EC2</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Databases</h2>
+                <h5>MySQL</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Concepts and Patterns</h2>
+                <h5>Restful / CRUD</h5>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Software</h2>
+                <h5>Git | MacOS | VS Code</h5>
+            </div>
+        </div>
+    </div>
+    <!-- End of skills banner -->
+    <!-- Education -->
+    <div id="education" class="fixed-education-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-center">Education</h1>
+            </div>
+        </div>
+    </div>
+    <div class="frame about2-bg p-3">
+        <div class="mx-auto d-flex col-md-6 card-bg p-3">
+            <div style="margin-right: 20px;">
+                <img class="education-icon" src="/static/img/codingdojo-icon.png" alt="">
+            </div>
+            <div>
+                <h3>Coding Dojo Bootcamp</h3>
+                <h5>Computer Software Engineering</h5>
+                <h5>Online | Jan 23 - Sept 23</h5>
+                <ul>
+                    <li><p>Built, tested and deployed full stack projects with HTML5 | CSS3 | Python | Flask | MySQL</p></li>
+                    <li><p>Consistently executed beyond the curriculum by integrating self-taught technologies</p></li>
+                    <li><p>Attended conferences to learn from other developers and stay up to date on the latest trends</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of education -->
+    <!-- Certifications -->
+    <div id="certifications" class="fixed-courses-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header2 text-center">Certifications and Courses</h1>
+                <!-- <h1 class="skills-txt text-center">Some of the courses I've completed.</h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="frame nav p-3 flex-column align-items-center">
+        <div class="mx-auto d-flex col-md-6 card-bg p-3 my-4">
+            <div style="margin-right: 20px;">
+                <img class="education-icon" src="/static/img/codingdojo-icon.png" alt="Coding Dojo">
+            </div>
+            <div>
+                <h3>Coding Dojo</h3>
+                <h5>Software Development</h5>
+                <p class="mb-1">- <strong>Web Fundamentals:</strong> HTML5 | CSS3 | Bootstrap | Javascript</p>
+                <p class="mb-1">- <strong>Python Stack:</strong> Python | Flask | Jinja2 | MySQL | AWS</p>
+            </div>
+        </div>
+        <div class="mx-auto d-flex col-md-6 card-bg p-3 my-4">
+            <div style="margin-right: 20px;">
+                <img class="education-icon" src="/static/img/coursera-logo.png" alt="Coursera">
+            </div>
+            <div>
+                <h3>Coursera</h3>
+                <h5>Meta Front-End Developer</h5>
+                <!-- <div class="d-flex">
+                    <img class="course-icon" src="/static/img/meta-logo.png" alt="Meta Logo">
+                    <h5>Meta Font-End Developer</h5>
+                </div> -->
+                <p class="mb-1">- <strong>Introduction to Front-End Development</strong></p>
+                <p class="mb-1">- <strong>Programming with Javascript</strong></p>
+                <p class="mb-1">- <strong>Version Control</strong></p>
+                <p class="mb-1">- <strong>HTML5 and CSS3 in depth</strong></p>
+                <!-- <p class="mb-1">- <strong>React Basics</strong></p> -->
+                <!-- <p class="mb-1">- <strong>Advanced React</strong></p> -->
+                <!-- <p class="mb-1">- <strong>Principles of UX/UI Design</strong></p> -->
+                <!-- <p class="mb-1">- <strong>Front-End Developer Capstone</strong></p> -->
+                <!-- <p class="mb-1">- <strong>Coding Interview Preparation</strong></p> -->
+            </div>
+        </div>
+    </div>
+    <!-- End of certifications -->
+    <!-- Experience -->
+    <div id="experience" class="fixed-experience-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-center">Experience</h1>
+            </div>
+        </div>
+    </div>
+    <div class="frame about2-bg p-3">
+        <div class="mx-auto d-flex col-md-6 card-bg p-3">
+            <div style="margin-right: 20px;">
+                <img class="education-icon" src="/static/img/codingdojo-icon.png" alt="">
+            </div>
+            <div>
+                <h3>Developer in Training</h3>
+                <h5>Coding Dojo</h5>
+                <h5>Boardman, Ohio, United States | Remote | Jan 23 - Sept 23</h5>
+                <ul>
+                    <li><p>Communicated effectively with both technical and non-technical audiences. </p></li>
+                    <li><p>Worked on group projects that required collaboration and effective problem solving.</p></li>
+                    <li><p>Gained experience in how to identify and solve problems using critical thinking and analytical skills.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of experience -->
+    <!-- Contact -->
+    <div id="contact" class="fixed-contact-bg border-top-b border-bottom-b">
+        <div class="row">
+            <div style="margin-top: 70px;">
+                <h1 class="skills-header text-center">Contact Me</h1>
+                <h1 class="skills-txt text-center">If you enjoy coding or would like to work together...</h1>
+            </div>
+        </div>
+    </div>
+    <div class="nav frame p-3 flex-column">
+        <div class="d-flex justify-content-around align-items-center my-5">
+            <a href="mailto:brandoncancode@gmail.com">
+                <img class="icon-size" src="/static/img/gmail-icon.png" alt="Email logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <a href="https://www.linkedin.com/in/brandoncancode" target="_blank">
+                <img class="icon-size" src="/static/img/linkedin-icon.png" alt="Linkedin logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <!-- <a href="https://drive.google.com/file/d/1KNbqboFK-3RsBnOZjVkPvD3vQh1D6_WxYXpN8eZ2R00/view" target="_blank"> -->
+            <!-- <a href="https://drive.google.com/file/d/1KNbqboFK-3RsBnOZjVkPvD3vQh1D6_WxYXpN8eZ2R00/view" target="_blank"> -->
+            <a href="https://drive.google.com/file/d/1KA67CBHh7sEsLHmFnwN2MnLnvMtCfHZT/view?usp=sharing" target="_blank">
+                <img class="icon-size" src="/static/img/resume-icon.png" alt="Resume logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <a href="https://www.github.com/Brando129" target="_blank">
+                <img class="icon-size" src="/static/img/github-icon.png" alt="Github logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+        </div>
+        <div class="d-flex justify-content-around align-items-center mb-5">
+            <a href="#contact">
+                <img class="icon-size" src="/static/img/youtube-icon.png" alt="Youtube logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <a href="https://www.instagram.com/brandon_can_code" target="_blank">
+                <img class="icon-size" src="/static/img/instagram-icon.png" alt="Instagram logo"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <a href="#contact">
+                <img class="icon-size" src="/static/img/twitter-icon.png" alt="Twitter"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+            <a href="#contact">
+                <img class="icon-size" src="/static/img/snapchat-icon.png" alt="Snapchat"
+                onmouseover="scale(this, 1.3)" onmouseleave="scale(this, 1)">
+            </a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h5 class="my-auto text-black">© 2023 Brandon Colangelo</h5>
+        </div>
+    </div>
+    <!-- End of Contact -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
